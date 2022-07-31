@@ -59,3 +59,53 @@ else if (item1 == "brother") {
 }
 }
 
+// Bài tập 3
+// input 3 số nguyên
+// output các số chẵn, các số lẻ
+// xử lý: 
+
+function count(){
+    let no1 = +document.getElementById('number1').value;
+    let no2 = +document.getElementById('number2').value;
+    let no3 = +document.getElementById('number3').value;
+    let countEven = 0;
+    let countOdd = 0;
+    
+    if(no1 % 2 === 0){
+        countEven++
+    }else {countOdd++}
+    if(no2 % 2 === 0){
+        countEven++
+    }else {countOdd++}
+    if(no3 % 2 === 0){
+        countEven++
+    }else {countOdd++};
+    let result = "<p>" + "Có " + countEven + " số chẵn" + ", " + countOdd + " số lẻ" +"</p>";
+    document.getElementById('count').innerHTML = result
+
+    
+} 
+// Bài tập 4
+ 
+
+function tamGiac(){
+    let a = +document.getElementById('canh1').value;
+    let b = +document.getElementById('canh2').value;
+    let c = +document.getElementById('canh3').value;
+    
+    if(a < b + c & b < a + c & c < a + b){
+        if(c*c === b*b + a*a | b*b === a*a + c*c | a*a === b*b + c*c){
+            console.log("vuông");
+        }else if(a===b & b===c){
+            console.log("đều");
+        }else if(a===b | a===c | b===c){
+            console.log("cân");
+        }else{
+            console.log("khác");
+        }
+    }else {
+        console.log("kp TG");
+    }
+    
+
+}

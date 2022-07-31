@@ -1,81 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>JS buổi 4</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <section id="bt1" class="py-5">
-        <div class="container">
-            <div class="col-md-10">
-                <h1>Sắp xếp 3 số nguyên theo thứ tự tăng dần</h1>
-                <div class="form-group row">
-                    <div class="mr-2">
-                        <label for="">Nhập số nguyên thứ nhất</label>
-                        <input type="text" name="" id="no1" class="form-control" placeholder=""
-                            aria-describedby="helpId" />
-                    </div>
-                    <div class="mr-2">
-                        <label for="">Nhập số nguyên thứ hai</label>
-                        <input type="text" name="" id="no2" class="form-control" placeholder=""
-                            aria-describedby="helpId" />
-                    </div>
-                    <div>
-                        <label for="">Nhập số nguyên thứ ba</label>
-                        <input type="text" name="" id="no3" class="form-control" placeholder=""
-                            aria-describedby="helpId" />
-                    </div>
-                </div>
-                <div>
-                    <button class="btn btn-success" onclick="sort()">Sắp xếp</button>
-                    <div id="result" class="py-2"></div>
-                </div>
+      <div class="container">
+        <div class="col-md-10">
+          <h1>Sắp xếp 3 số nguyên theo thứ tự tăng dần</h1>
+          <div class="form-group row">
+            <div class="mr-2">
+              <label for="">Nhập số nguyên thứ nhất</label>
+              <input
+                type="text"
+                name=""
+                id="no1"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+              />
             </div>
+            <div class="mr-2">
+              <label for="">Nhập số nguyên thứ hai</label>
+              <input
+                type="text"
+                name=""
+                id="no2"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+              />
+            </div>
+            <div>
+              <label for="">Nhập số nguyên thứ ba</label>
+              <input
+                type="text"
+                name=""
+                id="no3"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+              />
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-success" onclick="sort()">Sắp xếp</button>
+            <div id="result" class="py-2"></div>
+          </div>
         </div>
+      </div>
     </section>
     <section id="bt2" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Chào hỏi</h2>
-                    
-                        <select id="item1" name="Item 1">
-                          
-                            <option value="father">Father</option>
-                            <option value="mother">Mother</option>
-                            <option value="brother">Brother</option>
-                            <option value="sister">Sister</option>
-                          </select>
-                       
-                    <button class="btn btn-primary mt-2" onclick="submit()">
-                        Gửi lời chào
-                    </button>
-                    
-                    <div id="ketQua"></div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Chào hỏi</h2>
+
+            <select id="item1" name="Item 1">
+              <option value="father">Father</option>
+              <option value="mother">Mother</option>
+              <option value="brother">Brother</option>
+              <option value="sister">Sister</option>
+            </select>
+
+            <button class="btn btn-primary mt-2" onclick="submit()">
+              Gửi lời chào
+            </button>
+
+            <div id="ketQua"></div>
+          </div>
         </div>
+      </div>
+    </section>
+    <section id="bt3" class="py-5">
+      <div class="container">
+        <div class="col-md-10">
+          <h1>Đếm số chẵn lẻ</h1>
+          <div class="form-group row">
+            <div class="mr-2">
+              <input
+                type="text"
+                name=""
+                id="number1"
+                class="form-control"
+                placeholder="Nhập số nguyên đầu tiên"
+              />
+            </div>
+            <div class="mr-2">
+              <input
+                type="text"
+                name=""
+                id="number2"
+                class="form-control"
+                placeholder="Nhập số nguyên thứ hai"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                name=""
+                id="number3"
+                class="form-control"
+                placeholder="Nhập số nguyên thứ ba"
+              />
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-success" onclick="count()">Đếm</button>
+            <div id="count" class="py-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bt4" class="py-5">
+      <div class="container">
+        <div class="col-md-10">
+          <h1>Xác định tam giác</h1>
+          <div class="form-group row">
+            <div class="mr-2">
+              <input
+                type="text"
+
+                id="canh1"
+                class="form-control"
+                placeholder="Nhập cạnh đầu tiên"
+              />
+            </div>
+            <div class="mr-2">
+              <input
+                type="text"
+                name=""
+                id="canh2"
+                class="form-control"
+                placeholder="Nhập cạnh thứ hai"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                name=""
+                id="canh3"
+                class="form-control"
+                placeholder="Nhập cạnh thứ ba"
+              />
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-success" onclick="tamGiac()">Dự đoán</button>
+            <div id="duDoan" class="py-2"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script src="./main.js"></script>
-</body>
-
+  </body>
 </html>
