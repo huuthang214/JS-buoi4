@@ -95,13 +95,13 @@ function tamGiac(){
     
     if(a < b + c & b < a + c & c < a + b){
         if(c*c === b*b + a*a | b*b === a*a + c*c | a*a === b*b + c*c){
-            console.log("vuông");
+            document.getElementById('duDoan').innerHTML = "<p>" + "Hình tam giác vuông" + "</p>";
         }else if(a===b & b===c){
-            console.log("đều");
+            document.getElementById('duDoan').innerHTML = "<p>" + "Hình tam giác đều" + "</p>";
         }else if(a===b | a===c | b===c){
-            console.log("cân");
+            document.getElementById('duDoan').innerHTML = "<p>" + "Hình tam giác cân" + "</p>";
         }else{
-            console.log("khác");
+            document.getElementById('duDoan').innerHTML = "<p>" + "Hình tam giác khác" + "</p>";
         }
     }else {
         console.log("kp TG");
